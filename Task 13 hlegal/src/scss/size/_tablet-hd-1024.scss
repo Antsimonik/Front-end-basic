@@ -1,0 +1,161 @@
+@media (max-width: 1023px) {
+  .show-tablet-hd {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hide-tablet-hd {
+    display: none;
+  }
+
+  .hide-hr-tablet-hd {
+    display: none;
+  }
+
+  .show-vb-tablet-hd {
+    display: block;
+  }
+
+  .hero {
+    .header {
+      background-position: 51% 50%;
+      background-size: contain;
+    }
+
+    &-nav {
+      flex-direction: row;
+      justify-content: space-between;
+
+      &-contacts {
+        order: 0;
+        margin-bottom: 20px;
+      }
+
+      &-link {
+        margin-bottom: 250px;
+        text-align: right;
+      }
+    }
+
+    &-title {
+      p {
+        margin-bottom: 290px;
+      }
+    }
+
+    &-skills .wrapper {
+      width: auto;
+      overflow: visible;
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    &-skills {
+      display: flex;
+      flex-direction: row;
+      padding: 60px;
+
+      &-title {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        margin-right: 60px;
+        padding-bottom: 0;
+
+        a {
+          margin-left: 0;
+          margin-bottom: 30px;
+        }
+
+        a:last-child {
+          padding-right: 0;
+          margin-bottom: 0;
+        }
+      }
+
+      &-vertborder {
+        border-left: 4px solid rgb(255 255 255 / 30%);
+        overflow: visible;
+        margin-right: 60px;
+      }
+    }
+
+    &-experience {
+      &-card {
+        &-item {
+          width: calc(33% - 37px);
+        }
+      }
+    }
+  }
+
+  .about {
+    &-team {
+      display: flex;
+
+      &-foto {
+        background-image: url("../team-1024.svg");
+        aspect-ratio: 1/1.32;
+        height: 528px;
+      }
+
+      &-info {
+        border-radius: 0 16px 16px 0;
+      }
+    }
+
+    &-logo {
+      &-clients {
+        max-width: 1720px;
+        margin: 0 auto;
+
+        &-item {
+          width: 25%;
+        }
+      }
+    }
+
+    &-publications {
+      &-cards {
+        &-item {
+          &-picfirst {
+            background-image: url("../Publications/1024/1Cover.jpg");
+
+            // aspect-ratio: 1/0.514;
+            height: 200px;
+            width: 281px;
+          }
+
+          &-picsecond {
+            background-image: url("../Publications/1024/2Cover.jpg");
+
+            // aspect-ratio: 0.476/0.308;
+            height: 200px;
+            width: 281px;
+          }
+
+          &-picthird {
+            background-image: url("../Publications/1024/3Cover.jpg");
+
+            // aspect-ratio: 1/1;
+            height: 200px;
+            width: 281px;
+          }
+        }
+
+        &-item:nth-child(1) {
+          width: calc(33% - 20px);
+        }
+
+        &-item:nth-child(2) {
+          width: calc(33% - 20px);
+        }
+
+        &-item:nth-child(3) {
+          width: calc(33% - 20px);
+        }
+      }
+    }
+  }
+}

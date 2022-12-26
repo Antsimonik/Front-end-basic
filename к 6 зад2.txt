@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+}
+
+.wrapper {
+  width: 1110px;
+  margin: 0 auto;
+}
+
+.hero {
+    background: #EEEFF1;
+    padding-top: 80px;
+    padding-bottom: 140px;
+}
+
+.header {
+  background: #EEEFF1;
+  margin-bottom: 160px;
+}
+
+.link {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #34547A;
+  margin-right: 40px;
+}
+
+.active {
+  color: red;
+}
+
+.hero-text {
+  width: 540px;
+}

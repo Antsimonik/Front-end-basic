@@ -1,0 +1,246 @@
+@media (min-width: 320px) {
+  .fullscr-hide-slider-btn {
+    display: none;
+  }
+
+  .wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+  
+  .hero {
+    padding-top: 20px;
+    padding-bottom: 200px;
+    background-image: url(../../img/pictures/bg-hero_320.jpg);
+
+    img {
+      height: 30px;
+      width: 30px;
+    }
+
+    &-nav {
+      margin-bottom: 20px;
+    }
+
+    &-nav-info-link {
+      @include font(500, 16px, 19px, 0.05em);
+    }
+
+    &-line {
+      margin-bottom: 135px;
+    }
+
+    &-title {  
+      &-name {
+        padding-bottom: 10px;
+        @include font(300, 30px, 36px, 0.08em);
+      }
+  
+      &-discription {
+        @include font(300, 16px, 24px, 0.12em);
+      }
+    }
+  }
+
+  .about {
+    padding-top: 70px;
+
+    &-name {
+      @include font(300, 20px, 125%, 0.08em);
+      color: #777777;
+      padding-bottom: 30px;
+    }
+
+    &-title {
+      &-description {
+        &-who {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+      }
+
+      &-info {
+        margin-bottom: 30px;
+      }
+    }
+
+    &-slider .wrapper {
+      width: auto;
+      overflow: auto;
+    }
+
+    &-slider {
+      padding-bottom: 70px;
+      
+      &-inner {
+        margin-bottom: 30px;
+
+        img {
+          width: 290px;
+          height: 290px;
+          margin-right: 10px;
+        }
+
+        img:last-child {
+          padding-right: 15px;
+        }
+      }
+
+      &-line {
+        &-scrl {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+  
+      .scroll {
+        &-line {
+          border-bottom: 1px solid rgba(213, 213, 213, 1);
+          width: 155px;
+        }
+
+        &-btn {
+          border-bottom: 3px solid rgba(57, 50, 70, 1);
+          width: 61px;
+          order: -1;
+        }
+      }
+    }
+
+    &-solutions {
+      padding-bottom: 30px;
+
+      &-title {
+        @include font(300, 20px, 27px, 0.12em);
+        padding-bottom: 30px;
+      }
+      
+      &-info {
+        &-task {
+          @include font(300, 16px, 24px, 0.12em);
+
+          h4 {
+            padding-bottom: 12px;
+            font-weight: 300;
+          }
+
+          p {
+            font-family: 'Roboto';
+          }
+        }
+
+        &-task:first-child {
+          padding-bottom: 30px;
+        }
+      }
+
+      &-bg {
+        height: 290px;
+      }
+    }
+
+    .peculiarities {
+      padding-top: 30px;
+
+      h4 {
+        @include font(300, 16px, 24px, 0.12em);
+        padding-bottom: 12px;
+      }
+
+      &-project {
+        padding-bottom: 30px;
+
+        &-item {
+          p {
+            font-family: 'Roboto';
+            line-height: 24px;
+          }
+        }
+      }
+
+      &-foto {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        &-item {
+          font-size: 0;
+          input {
+            width: 290px;
+            height: 290px;
+          }
+        }
+      }
+
+      &-similar .wrapper-horizont {
+        width: auto;
+        overflow: auto;
+      }
+
+      &-similar {
+        padding-top: 70px;
+
+        h3 {
+          @include font(300, 20px, 125%, 0.08em);
+          margin-bottom: 30px;
+          text-align: center;
+        }
+
+        &-item {
+          display: flex;
+          flex-direction: row;
+          margin-bottom: 30px;
+          padding-left: 15px;
+          padding-right: 15px;
+
+          &-foto {
+            input {
+              width: 290px;
+              height: 290px;
+              margin-right: 10px;
+            }
+          }
+        }
+
+        .about-slider-line {
+          margin-bottom: 75px;
+        }
+
+        &-link {
+          h2 {
+            display: flex;
+            align-items: center;
+            text-transform: uppercase;
+            @include font (300, 16px, 19px, 0.12em);
+            color: #777777;
+            margin-bottom: 40px;
+            padding-bottom: 5px;
+
+            img {
+              margin-left: 14px;
+              width: 12px;
+              height: 12px;
+            }
+          }
+        }
+      }
+    }
+
+    .scroll {
+      &-line {
+        border-bottom: 1px solid rgba(213, 213, 213, 1);
+        width: 155px;
+      }
+
+      &-btn {
+        border-bottom: 3px solid rgba(57, 50, 70, 1);
+        width: 61px;
+        order: -1;
+      }
+    }
+  }
+}

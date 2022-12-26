@@ -1,0 +1,316 @@
+@media (max-width: 767px) {
+  .hide-contacts-table {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .hide-nav-mobile {
+    display: none;
+  }
+
+  .hide-nav-desktop {
+    display: block;
+  }
+
+  .hide-contacts-mobile {
+    display: none;
+  }
+
+  .wrapper {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .header {
+    padding-top: 50px;
+  }
+
+  .hero {
+    &-nav {
+      display: flex;
+      flex-direction: column;
+
+      &-contacts {
+        justify-content: flex-start;
+        background: none;
+        order: -1;
+        padding: 0;
+        margin-bottom: 30px;
+        gap: 6px;
+
+        p {
+          color: #b3b3ba;
+          font-weight: 400;
+
+          @include font(400, 16px, 20px, inherit);
+        }
+
+        a {
+          @include font(700, 16px, 20px, inherit);
+
+          color: #fff;
+        }
+      }
+
+      &-logo {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+
+        a {
+          font-size: 0;
+          margin-bottom: 6.5px;
+
+          img {
+            width: 130px;
+            height: 46.5px;
+          }
+        }
+
+        a:last-child {
+          margin-bottom: 30px;
+
+          img {
+            height: 9.5px;
+          }
+        }
+      }
+
+      &-link {
+        @include font(700, 16px, 20px, inherit);
+
+        text-align: left;
+        margin-bottom: 270px;
+
+        a {
+          color: #fff;
+          margin-right: 15px;
+        }
+
+        a:last-child {
+          color: #fff;
+          margin-right: 0;
+        }
+
+        a:hover {
+          color: rgb(240 20 90 / 100%);
+          padding-bottom: 3px;
+          border-bottom: 1px solid rgb(240 20 90 / 100%);
+        }
+      }
+    }
+
+    &-title {
+      p {
+        margin-bottom: 420px;
+      }
+    }
+
+    &-skills {
+      padding-top: 60px;
+      padding-bottom: 60px;
+
+      &-title {
+        padding-bottom: 60px;
+
+        a {
+          @include font(700, 38px, 46px, inherit);
+        }
+      }
+
+      hr {
+        margin-bottom: 60px;
+      }
+
+      &-text {
+        h2 {
+          @include font(700, 30px, 37px, inherit);
+        }
+      }
+    }
+
+    &-experience {
+      &-text {
+        @include font(700, 38px, 46px, inherit);
+
+        margin-bottom: 60px;
+      }
+
+      &-card {
+        gap: 60px;
+
+        &-item {
+          width: calc(50% - 30px);
+        }
+      }
+    }
+  }
+
+  .about {
+    &-team {
+      padding-top: 80px;
+
+      &-foto {
+        background-image: url("../team-768.svg");
+        aspect-ratio: 1/0.771;
+      }
+
+      &-info {
+        p {
+          @include font(700, 38px, 46px, inherit);
+        }
+      }
+    }
+
+    &-logo .wrapper {
+      max-height: none;
+      overflow-y: auto;
+    }
+
+    &-logo {
+      &-clients {
+        display: flex;
+        flex-wrap: wrap;
+
+        &-item {
+          width: 33%;
+        }
+      }
+    }
+
+    &-publications {
+      &-cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+
+        &-item:nth-child(1) {
+          width: calc(50% - 15px);
+        }
+
+        &-item:nth-child(2) {
+          width: calc(50% - 15px);
+        }
+
+        &-item {
+          display: flex;
+          flex-direction: column;
+          padding-bottom: 0;
+
+          &-picfirst {
+            background-image: url("../Publications/768/1Cover.jpg");
+
+            // aspect-ratio: 1/0.514;
+            height: 200px;
+            width: 309px;
+          }
+
+          &-picsecond {
+            background-image: url("../Publications/768/2Cover.png");
+
+            // aspect-ratio: 0.476/0.308;
+            height: 200px;
+            width: 309px;
+          }
+
+          &-picthird {
+            background-image: url("../Publications/768/3Cover.jpg");
+
+            // aspect-ratio: 1/1;
+            width: 648px;
+            height: 200px;
+          }
+
+          &-info {
+            flex-grow: 1;
+          }
+        }
+      }
+    }
+  }
+
+  .contacts {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    hr {
+      border: 2px solid #e6e6f0;
+      margin-bottom: 30px;
+    }
+
+    &-info {
+      display: flex;
+      flex-direction: column;
+
+      &-map {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+
+        &-str {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: 10px;
+
+          p {
+            @include font(400, 16px, 20px,inherit);
+
+            color: #323264;
+          }
+
+          a {
+            @include font(700, 12px, 15px, 1px);
+
+            text-transform: uppercase;
+            color: #24a3ff;
+          }
+
+          img {
+            height: 6px;
+            width: 6px;
+          }
+        }
+
+        &-copyname {
+          p {
+            @include font(400, 16px, 20px, 0.3px);
+
+            color: #b3b3ba;
+          }
+        }
+      }
+
+      &-feedback {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+
+        @include font(700, 16px, 20px, inherit);
+
+        a {
+          svg {
+            margin-bottom: 0;
+          }
+        }
+
+        &-sep {
+          width: 6px;
+          height: 6px;
+        }
+
+        &-phone {
+          color: #46466e;
+          margin-bottom: 0;
+        }
+
+        &-mail {
+          color: rgb(36 163 255 / 100%);
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto' ;
+    margin: 0;
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 400;
+}
+
+p {
+    color: rgba(114, 114, 114, 1);
+    margin: 0;
+}
+
+h2 {
+    margin: 0;
+}
+
+h3 {
+    margin: 0;
+}
+
+a {
+    color: rgba(0, 0, 0, 1);
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-right: 40px;
+}
+
+.wrapper {
+    width: 1110px;
+    margin: 0 auto;
+}
+
+.hid:not(:focus):not(:active) {
+    clip: rect(0 0 0 0); 
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap; 
+    width: 1px;
+  }
+
+.block {
+    background: rgba(238, 239, 241, 1);
+}
+
+.nav {
+    padding-top: 80px;
+    letter-spacing: 0.1em;
+}
+
+.link-active {
+    font-weight: 500;
+    color: rgba(52, 84, 122, 1);
+}
+
+.block-text {
+    width: 540px;
+}
+
+.block-text-title {
+    padding-top: 160px;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 79px;
+}
+
+.block-text-disign {
+    padding-top: 60px;
+}
+
+.btn {
+    color: rgba(255, 255, 255, 1);
+    background: rgba(52, 84, 122, 1);
+    padding: 20px 40px;
+    text-transform: uppercase;
+    margin-top: 65px;
+    margin-bottom: 140px;
+}
+
+.about-me {
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.about-title {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 38px;
+}
+
+.about-description {
+    width: 540px;
+    padding-top: 50px;
+    text-align: center;
+    display: inline-block;
+}
+
+.benefits {
+    background: rgba(52, 84, 122, 1);
+}
+
+.benefits-item {
+    display: inline-block;
+    text-align: left;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.benefits-item img {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+.benefits-info {
+    display: inline-block;
+    margin-right: 45px;
+}
+
+.benefits-info-last {
+    margin-right: 0;
+}
+
+.benefits-item p {
+    color: rgba(255, 255, 255, 1);
+}
+
+p.benefits-item-amout {
+    font-size: 21px;
+    padding-bottom: 10px;
+}
+
+.about-media {
+    padding-top: 50px;
+}
+
+.my-info {
+    background: rgba(52, 84, 122, 1);
+}
+
+.my-info-sec {
+    color: rgba(255, 255, 255, 1);
+}
+
+.my-info-name {
+    font-weight: 500;
+    font-size: 21px;
+    padding-top: 50px;
+}
+
+.my-info-copyright {
+    font-size: 13px;
+    padding-bottom: 50px;
+    padding-top: 20px;
+    margin: 0;
+}

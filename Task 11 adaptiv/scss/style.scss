@@ -1,0 +1,347 @@
+@import './helpers/normalize.scss';
+@import './font.scss';
+@import './helpers/_mixins.scss';
+@import './size/mobile-320';
+@import './size/_tablet-768.scss';
+@import './size/work-1024.scss';
+@import './size/work-1920.scss';
+
+$primaryColor: rgba(255, 255, 255, 1);
+$secondaryColor: rgba(119, 119, 119, 1);
+$thirdColor: rgba(57, 50, 70, 1);
+
+body {
+  font-family: 'Roboto Condensed';
+  color: $secondaryColor;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  margin: 0;
+}
+
+h3 {
+  margin: 0;
+  text-transform: uppercase;
+}
+
+h4 {
+  margin: 0;
+  text-transform: uppercase;
+}
+
+h5 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+hr {
+  margin: 0;
+}
+
+.hid {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.hero {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: multiply;
+
+  &-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-info-link {
+      text-transform: uppercase;
+    }
+
+    &-phone {
+      a {
+        display: flex;
+        align-items: center;
+        color: $primaryColor;
+
+        img {
+          padding-right: 10px;
+          height: 21px;
+          width: 21px;
+        }
+      }
+    }
+
+    &-btn {
+      button {
+        background-color: rgba(0, 0, 0, 0); //кнопка не лежит четко
+        border: none;
+        font-size: 0;
+        height: 45px;
+        width: 45px;
+        padding: 0;
+
+      }
+    }
+  }
+
+  &-line {
+    outline: 0.5px solid #878787;
+  }
+
+  &-title {
+    text-align: center;
+    color: $primaryColor;
+    text-transform: uppercase;
+  }
+}
+
+.about {
+  &-title {
+    &-description {
+      hr {      //разобраться с полосами
+        margin-bottom: 24px;
+        border: 1px solid #D5D5D5;
+      }
+
+      &-who {
+        padding-bottom: 24px;
+        color: $secondaryColor;
+
+        h5 {
+          @include font(400, 14px, 16px, 0.15em);
+          text-transform: uppercase;      
+        }
+
+        p {
+          @include font(300, 16px, 24px, 0.15em);
+          color: $thirdColor;
+          font-family: 'Roboto';
+        }
+      }
+    }
+
+    &-info {
+      @include font(300, 16px, 24px, inherit);
+      font-family: 'Roboto';
+      color: $secondaryColor;
+    }
+  }
+
+  &-slider {
+    &-inner {
+      position: relative;
+      display: flex;
+    }
+  }
+
+  &-slider {
+    &-btn {
+      &-pic {
+        width: 20px;
+        height: 20px;
+        outline: 1px solid #FFFFFF;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        margin-top: -20px;
+        padding: 10px;
+        backdrop-filter: blur(5px);
+        cursor: pointer;
+      }
+    }
+  }
+
+  &-solutions {
+    &-bg {
+      background-image: url(../img/pictures/bg-appart.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 100% 100%;
+    }
+  }
+
+  .peculiarities {
+    &-similar {
+      &-item {
+        position: relative;
+      }
+
+      &-link {
+        h2 {
+          border-bottom: 1px solid rgba(213, 213, 213, 1);
+        }
+      }
+
+      .about {
+        &-btn {
+          &-down {
+            font-size: 0;
+            text-align: end;
+          }
+        }
+      } 
+    }
+  }
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(247, 247, 247, 1);
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  &-media {
+    text-align: center;
+    padding-bottom: 30px;
+
+    a {
+      margin-right: 30px;
+      @include font(400, 14px, 16px, 0.15em);
+      text-transform: uppercase;
+      color: #777777;
+    }
+
+    a:last-of-type {
+      margin-right: 0px;
+    }
+  }
+
+  &-copyright {
+    @include font(300, 13px, 15px, inherit);
+    font-family: 'Roboto';
+  } 
+}
+
+.feed {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.form {
+  width: 800px;
+  background: rgba(255, 255, 255, 1);
+  position: fixed;
+  padding: 50px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  margin-top: -180px;
+  top: 50%;
+
+}
+
+.btn-close {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background: none;
+  margin: 0 auto;
+}
+
+.btn-close-position {
+  position: absolute;
+  right: 4px;
+  top: -30px;
+  width: 20px;
+  height: 20px;
+}
+
+.btn-close-item {
+  width: 20px;
+  height: 20px;
+}
+
+.feedback-data {
+  display: flex;
+  gap: 30px;
+  margin: 40px 0;
+  font-family: 'Roboto';
+  color: rgba(135, 135, 135, 1);
+}
+
+.feedback-data input {
+  border: none;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(119, 119, 119, 1);
+  width: 335px;
+}
+
+.feedback-btn {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.btn-send {
+  background: rgba(57, 50, 70, 1);
+  padding: 22px 80px 22px 60px;
+  font-size: 14px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  border: 1px solid rgba(57, 50, 70, 1);
+}
+
+.btn-send::after {
+  content:"";
+  display: block;
+  position: absolute;
+  left: 155px;
+  width: 8px;
+  height: 8px;
+  background: url(../image/arrow45white.png);
+  background-size: 8px 8px;
+  background-repeat: no-repeat;
+}
+
+.btn-send-item {
+  width: 8px;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+}
+
+.feedback-text {
+  position: relative;
+  left: 35px;
+  width: 310px;
+  font-size: 13px;
+  line-height: 15px;
+}
+
+.feedback-text a {
+  text-decoration: underline;
+  color: #878787;
+  text-transform: lowercase;
+}
+
+.opened {
+  display: block;
+}
+
+.closen {
+  display: none;
+}
+

@@ -1,0 +1,65 @@
+@media (min-width: 1440px) {
+  .hero {
+    &-nav {
+      &-link { // от родителя маргины
+        margin-bottom: 260px;
+      }
+    }
+
+    &-title { // поставить от родителя маргины
+      p {
+        margin-bottom: 300px;
+      }
+    }
+
+    &-skills {
+      padding-right: 180px;
+      padding-left: 180px;
+
+      &-text {
+        padding-top: 40px;
+        padding-bottom: 40px;
+      }
+    }
+  }
+
+  .about {
+    &-team {
+      &-foto {
+        background-image: url("../team-1440.svg"); // не потянулось вниз
+        aspect-ratio: 1/0.86;
+        height: 344px;
+      }
+    }
+
+    &-publications {
+      &-cards {
+        &-item {
+          &-picfirst {
+            background-image: url("../Publications/1440/1Cover.jpg");
+
+            // aspect-ratio: 1/0.514;
+            height: 200px;
+            width: 420px;
+          }
+
+          &-picsecond {
+            background-image: url("../Publications/1440/2Cover.jpg");
+
+            // aspect-ratio: 0.476/0.308;
+            height: 200px;
+            width: 420px;
+          }
+
+          &-picthird {
+            background-image: url("../Publications/1440/3Cover.jpg");
+
+            // aspect-ratio: 1/1;
+            height: 200px;
+            width: 420px;
+          }
+        }
+      }
+    }
+  }
+}

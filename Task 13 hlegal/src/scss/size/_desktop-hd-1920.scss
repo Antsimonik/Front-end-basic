@@ -1,0 +1,75 @@
+@media (min-width: 1920px) {
+  .wrapper {
+    padding-right: 160px;
+    padding-left: 160px;
+  }
+
+  .hero {
+    &-nav {
+      &-link { // от родителя маргины
+        margin-bottom: 360px;
+      }
+    }
+
+    &-title { // поставить от родителя маргины
+      p {
+        margin-bottom: 400px;
+      }
+    }
+
+    &-skills {
+      padding-right: 280px;
+      padding-left: 280px;
+
+      &-text {
+        padding-top: 70px;
+        padding-bottom: 70px;
+      }
+    }
+  }
+
+  .about {
+    &-team {
+      &-foto {
+        background-image: url("../team-1920.svg");
+        height: 298px;
+      }
+    }
+
+    &-logo {
+      &-clients {
+        margin-bottom: 60px;
+      }
+    }
+
+    &-publications {
+      &-cards {
+        &-item {
+          &-picfirst {
+            background-image: url("../Publications/1920/1Cover.jpg");
+
+            // aspect-ratio: 1/0.514;
+            height: 200px;
+            width: 513px;
+          }
+
+          &-picsecond {
+            background-image: url("../Publications/1920/2Cover.jpg");
+
+            // aspect-ratio: 0.476/0.308;
+            height: 200px;
+            width: 513px;
+          }
+
+          &-picthird {
+            background-image: url("../Publications/1920/3Cover.jpg");
+
+            // aspect-ratio: 1/1;
+            height: 200px;
+            width: 513px;
+          }
+        }
+      }
+    }
+  }
+}

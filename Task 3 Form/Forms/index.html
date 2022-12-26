@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <form action="https://fom.in.ua/echo" method="GET">
+      <fieldset>
+        <legend>Forma</legend>
+        <label for="namefilms">1. Заголовок фильма:</label><br>
+        <input id="namefilms" type="text" name="Name films" placeholder="Enter name of films" required>
+        <br><br>
+        <label for="picture">2. Обложка фильма:</label><br>
+        <input id="picture" type="file" name="Picture">
+        <br><br>
+        <label for="lenghtoftime">3. Продолжительность фильма:</label><br>
+        <input type="time" name="Lenght of time" id="lenghtoftime">
+        <br><br>
+        <label for="genr">4. Жанр фильма:</label><br>
+        <small>Комедия</small>
+        <input type="checkbox" name="Genr" id="genr" value="Comedy">
+        <small>Триллер</small>
+        <input type="checkbox" name="Genr" id="genr1" value="Thriller">
+        <small>Драма</small>
+        <input type="checkbox" name="Genr" id="genr2" value="Drama">
+        <small>Боевик</small>
+        <input type="checkbox" name="Genr" id="genr3" value="Action movie">
+        <small>Фантастика</small>
+        <input type="checkbox" name="Genr" id="genr4" value="Fantastik">
+        <br><br>
+        <label for="age">5. Возраст:</label><br>
+        <small>от 0 до 10 лет</small>
+        <input type="radio" name="Age" id="age" value="0-10"><br>
+        <small>от 10 до 18 лет</small>
+        <input type="radio" name="Age" id="age1" value="10-18"><br>
+        <small>18+</small>
+        <input type="radio" name="Age" id="age2" value="18+">
+        <br><br>
+        <label for="Source">6. Ссылка на фильм:</label><br>
+        <input type="url" name="Source" id="Source">
+        <br><br>
+        <label for="Daterental">7. Дата выхода в прокат:</label><br>
+        <input type="date" name="Date rental" id="Daterental">
+        <br><br>
+        <label for="rating">8. Рейтинг фильма:</label><br>
+        <select name="Rating" id="rating">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+          <option>7</option>
+          <option>8</option>
+          <option>9</option>
+          <option>10</option>
+        </select>
+        <br><br>
+       <label for="preview">9. Превью для филма:</label><br>
+        <textarea name="Prev" id="preview" cols="30" rows="10" placeholder="Превью"></textarea>
+        <br><br>
+        <label for="language">10. Выбор языка:</label><br>
+        <input list="lang" name="Language" id="language">
+        <datalist id="lang">
+          <option value="English">
+          <option value="Russian">
+          <option value="Detchland">
+        </datalist>
+        <br><br>
+        <input type="hidden" name="today" value="29.03.2022">
+      </fieldset>
+      <hr>
+      <label for="reset">12. Сброс:</label>
+      <input type="reset" name="reset" id="reset">
+      <br><br>
+      <label for="sub">Отправить:</label>
+      <button id="sub" type="submit">Оформить заявку</button>
+    </form>    
+</body>
+</html>

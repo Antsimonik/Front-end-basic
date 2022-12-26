@@ -1,0 +1,71 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.name {
+    color: red;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.navigation {
+    border: 1px solid red;
+    width: max-content;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: green;
+}
+
+nav a.mainly {
+    color: pink;
+}
+
+.karta-film,
+.user {
+    border: 2px solid pink;
+}
+
+.kart {
+    border: 2px solid green;
+}
+
+.pic {
+    border-radius: 10px;
+}
+
+.real-rating {
+    color: yellow;
+}
+
+.max-rating {
+    color: green;
+}
+
+.description {
+    font-weight: bold;
+}
+
+ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+.hashteg a {
+    color: black;
+    text-decoration: none;
+}
+
+button {
+    border: solid;
+    border-radius: 50px;
+}
+
+.btn-like {
+    background: green;
+}
+
+.btn-dislike {
+    background: red;
+}

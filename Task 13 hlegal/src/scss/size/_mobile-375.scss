@@ -1,0 +1,509 @@
+@media (min-width: 375px) {
+  .hide-nav-desktop {
+    display: none;
+  }
+
+  .wrapper {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 0 auto;
+    max-width: 1920px;
+  }
+
+  .hero {
+    .header {
+      background-image: url("../item/Symbol-h.svg");
+      background-position: 51% 100%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      padding-bottom: 30px;
+    }
+
+    &-nav {
+      &-contacts {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgb(245 245 250 / 20%);
+        padding: 10px 15px 10px 22px;
+
+        &-btn {
+          input {
+            background: none;
+            border: none;
+
+            @include font(700, 12px, 15px, 1px);
+
+            color: #fff;
+            text-transform: uppercase;
+            cursor: pointer;
+          }
+
+          input:last-of-type {
+            background-color: rgb(240 20 90 / 100%);
+            border-radius: 8px;
+            padding: 5px 7px;
+          }
+        }
+
+        &-number {
+          a {
+            @include font(700, 16px, 20px, inherit);
+
+            color: #fff;
+          }
+        }
+      }
+
+      &-logo {
+        display: flex;
+        padding: 15px 22px 140px 15px;
+
+        &-item {
+          display: flex;
+          flex-direction: column;
+
+          a {
+            font-size: 0;
+            margin-bottom: 3.5px;
+          }
+        }
+
+        &-service {
+          display: flex;
+
+          img {
+            width: 12px;
+            height: 26px;
+          }
+
+          a {
+            @include font(400, 20px, 24px, inherit);
+
+            color: #fff;
+          }
+        }
+
+        &-btn {
+          margin-left: auto;
+        }
+      }
+    }
+
+    &-title {
+      text-align: center;
+
+      p {
+        @include font(700, 38px, 46px, inherit);
+
+        color: #fff;
+        margin-bottom: 160px;
+      }
+
+      button {
+        background-color: rgb(0 0 0 / 0%);
+        border: none;
+        cursor: pointer;
+
+        svg:hover circle {
+          stroke: rgb(240 20 90 / 100%);
+        }
+
+        svg:hover path {
+          stroke: rgb(240 20 90 / 100%);
+        }
+      }
+    }
+
+    &-skills .wrapper {
+      width: auto;
+      overflow: auto;
+    }
+
+    &-skills {
+      padding-top: 30px;
+      padding-bottom: 30px;
+
+      &-title {
+        display: flex;
+        padding-bottom: 30px;
+
+        a {
+          display: flex;
+          flex-wrap: nowrap;
+
+          @include font(700, 30px, 37px, inherit);
+
+          color: #b3b3ba;
+          margin-left: 30px;
+          white-space: nowrap;
+        }
+
+        a:first-child {
+          background: linear-gradient(90.13deg, #ef8080 0.84%, #f0145a 99.96%);
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+          margin-left: 0;
+        }
+
+        a:last-child {
+          padding-right: 30px;
+        }
+
+        a:nth-child(2):hover {
+          color: rgb(240 20 90 / 100%);
+        }
+
+        a:nth-child(3):hover {
+          color: rgb(240 20 90 / 100%);
+        }
+
+        a:nth-child(4):hover {
+          color: rgb(240 20 90 / 100%);
+        }
+      }
+
+      hr {
+        margin-bottom: 30px;
+        border: 4px solid rgb(255 255 255 / 30%);
+        border-right: 0;
+        border-top: 0;
+        border-left: 0;
+      }
+
+      &-text {
+        h2 {
+          @include font(700, 20px, 24px, inherit);
+
+          margin-bottom: 30px;
+        }
+
+        p {
+          @include font(400, 19px, 30px, inherit);
+        }
+      }
+    }
+
+    &-experience {
+      padding-bottom: 60px;
+
+      h3 {
+        @include font(700, 14px, 17px, 1px);
+
+        text-transform: uppercase;
+        color: rgb(36 163 255 / 100%);
+        margin-bottom: 10px;
+      }
+
+      h3:hover {
+        color: #f0145a;
+      }
+
+      &-text {
+        @include font(700, 30px, 37px, inherit);
+
+        background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: 30px;
+      }
+
+      &-card {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+
+        &-item {
+          a {
+            font-size: 0;
+
+            img {
+              background: rgb(255 255 255 / 100%);
+              border-radius: 24px;
+              padding: 22px;
+              margin-bottom: 30px;
+            }
+          }
+
+          h3 {
+            @include font(700, 22px, 27px, inherit);
+
+            margin-bottom: 15px;
+          }
+
+          p {
+            @include font(400, 16px, 26px, inherit);
+
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+
+  .about {
+    &-team {
+      padding-top: 50px;
+      padding-bottom: 30px;
+
+      &-foto {
+        background-image: url("../team-375.svg");
+        background-repeat: no-repeat;
+        aspect-ratio: 1/1.6;
+      }
+
+      &-info {
+        padding: 30px;
+        background-color: rgb(245 245 250 / 100%);
+
+        h3 {
+          @include font(700, 14px, 17px, 1px);
+
+          text-transform: uppercase;
+          color: #24a3ff;
+          margin-bottom: 5px;
+        }
+
+        p {
+          @include font(700, 30px, 37px, inherit);
+
+          background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+          margin-bottom: 30px;
+        }
+
+        h4 {
+          @include font(700, 16px, 20px, inherit);
+
+          color: rgb(179 179 186 / 100%);
+          margin-bottom: 6px;
+        }
+
+        h5 {
+          @include font(400, 14px, 22px, inherit);
+
+          color: rgb(179 179 186 / 100%);
+        }
+      }
+    }
+
+    &-logo .wrapper {
+      max-height: 720px;
+      overflow-y: scroll;
+      padding: 0;
+    }
+
+    &-logo {
+      &-clients {
+        &-item:nth-child(1) {
+          background-color: rgb(28 66 128 / 100%);
+          padding: 36px 0;
+        }
+
+        &-item:nth-child(2) {
+          background-color: rgb(20 54 70 / 100%);
+          padding: 44px 0;
+        }
+
+        &-item:nth-child(3) {
+          background-color: rgb(244 139 48 / 100%);
+          padding: 38px 0;
+        }
+
+        &-item:nth-child(4) {
+          background-color: rgb(158 77 195 / 100%);
+          padding: 39px 0;
+        }
+
+        &-item:nth-child(5) {
+          background-color: rgb(253 147 57 / 100%);
+          padding: 38px 0;
+        }
+
+        &-item:nth-child(6) {
+          background-color: rgb(226 226 228 / 100%);
+          padding: 36px 0;
+        }
+
+        &-item:nth-child(7) {
+          background-color: rgb(199 28 54 / 100%);
+          padding: 29px 0;
+        }
+
+        &-item:nth-child(8) {
+          background-color: rgb(220 243 249 / 100%);
+          padding: 22px 0;
+        }
+
+        &-item:nth-child(9) {
+          background-color: rgb(234 234 234 / 100%);
+          padding: 30px 0;
+        }
+
+        &-item:nth-child(10) {
+          background-color: rgb(40 34 64 / 100%);
+          padding: 41px 0;
+        }
+
+        &-item:nth-child(11) {
+          background-color: rgb(29 69 104 / 100%);
+          padding: 37px 0;
+        }
+
+        &-item:nth-child(12) {
+          background-color: rgb(0 0 0 / 100%);
+          padding: 12px 0;
+        }
+      }
+    }
+
+    &-publications {
+      padding-top: 30px;
+      background-color: rgb(245 245 250 / 100%);
+
+      h3 {
+        @include font(700, 14px, 17px, 1px);
+
+        text-transform: uppercase;
+        color: #24a3ff;
+        margin-bottom: 5px;
+      }
+
+      h3:hover {
+        color: #f0145a;
+      }
+
+      &-cards {
+        &-item:last-child {
+          padding-bottom: 0;
+        }
+
+        &-item {
+          padding-bottom: 30px;
+
+          &-picfirst {
+            background-image: url("../Publications/375/1Cover.jpg");
+            background-repeat: no-repeat;
+
+            // aspect-ratio: 1/0.634;
+            width: 315px;
+            height: 200px;
+          }
+
+          &-picsecond {
+            background-image: url("../Publications/375/2Cover.jpg");
+            background-repeat: no-repeat;
+
+            // aspect-ratio: 1/0.634;
+            width: 315px;
+            height: 200px;
+          }
+
+          &-picthird {
+            background-image: url("../Publications/375/3Cover.jpg");
+            background-repeat: no-repeat;
+
+            // aspect-ratio: 1/0.634;
+            width: 315px;
+            height: 200px;
+          }
+
+          &-info {
+            padding: 30px;
+            background-color: rgb(255 255 255 / 100%);
+
+            h4 {
+              @include font(700, 16px, 20px, inherit);
+
+              font-weight: 700;
+              color: #24a3ff;
+              margin-bottom: 15px;
+            }
+
+            h5 {
+              @include font(700, 12px, 15px, 1px);
+
+              text-transform: uppercase;
+              color: #b3b3ba;
+              margin-bottom: 15px;
+            }
+
+            hr {
+              border: 4px solid rgb(230 230 240 / 100%);
+              margin-bottom: 15px;
+            }
+
+            p {
+              color: #000;
+
+              @include font(400, 14px, 22px, inherit);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .contacts {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+
+    hr {
+      border: 2px solid #e6e6f0;
+      margin-bottom: 30px;
+    }
+
+    &-info {
+      display: flex;
+      flex-direction: column;
+
+      &-str {
+        @include font(400, 16px, 20px,inherit);
+
+        color: #323264;
+        margin-bottom: 10px;
+      }
+
+      &-map {
+        @include font(700, 12px, 15px, 1px);
+
+        color: #24a3ff;
+        margin-bottom: 20px;
+      }
+
+      a {
+        svg {
+          margin-bottom: 10px;
+        }
+      }
+    }
+
+    &-feedback {
+      @include font(700, 16px, 20px, inherit);
+
+      &-phone {
+        color: #46466e;
+        margin-bottom: 10px;
+      }
+
+      &-mail {
+        @include font(700, 16px, 20px, inherit);
+
+        margin-bottom: 30px;
+        color: #24a3ff;
+      }
+    }
+
+    &-map {
+      &-copyname {
+        p {
+          @include font(400, 16px, 20px, inherit);
+
+          color: #b3b3ba;
+        }
+      }
+    }
+  }
+}
